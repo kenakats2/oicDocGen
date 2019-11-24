@@ -1,0 +1,105 @@
+[
+  {
+    "id": "^co[0-9]{1,}$",
+    "description": "Call out javascript function",
+    "actionType": 1
+  },
+  {
+    "id": "^eh[0-9]{1,}$",
+    "description": "Throw error to error hospital"
+  },
+  {
+    "id": "^f[0-9]{1,}$",
+    "description": "For loop start",
+    "actionType": 6
+  },
+  {
+    "id": "^f[0-9]{1,}_for.end",
+    "description": "For loop end",
+    "actionType": 7
+  },
+  {
+    "id": "^i[0-9]{1,}$",
+    "description": "Invoke",
+    "actionType": 1
+  },
+  {
+    "id": "^l[0-9]{1,}$",
+    "description": "Assign variables",
+    "actionType": 2
+  },
+  {
+    "id": "^lg[0-9]{1,}$",
+    "description": "Output a custom log",
+    "actionType": 13
+  },
+  {
+    "id": "^m[0-9]{1,}$",
+    "description": "Mapping",
+    "actionType": 8
+  },
+  {
+    "id": "^r[0-9]{1,}$",
+    "description": "Event-based integrations start",
+    "actionType": 9
+  },
+  {
+    "id": "^s[0-9]{1,}$",
+    "description": "Conditional branch",
+    "actionType": 4
+  },{
+    "id": "^s[0-9]{1,}_router.end",
+    "description": "Conditional branch end",
+    "actionType": 5
+  },
+  {
+    "id": "^sc[0-9]{1,}$",
+    "description": "",
+    "actionType": 3
+  },
+  {
+    "id": "^sf[0-9]{1,}$",
+    "description": "Stage action",
+    "actionType": 1
+  },
+  {
+    "id": "^sr[0-9]{1,}$",
+    "description": "Schedule-based integrations start"
+  },
+
+  {
+    "id": "^st[0-9]{1,}$",
+    "description": "Processing stop"
+  },
+  {
+    "id": "^t[0-9]{1,}$",
+    "description": "Scope action",
+    "actionType": 12
+  },
+  {
+    "id": "^t[0-9]{1,}_begin",
+    "description": "Scope action detail start"
+  },
+  {
+    "id": "^t[0-9]{1,}.*.end",
+    "description": "Scope action detail stop"
+  },
+  {
+    "id": "^ta[0-9]{1,}_begin",
+    "description": "Scope action error handling start"
+  },
+  {
+    "id": "^ta[0-9]{1,}.end",
+    "description": "Scope action error handling end"
+  },
+  {
+    "id": "^wh[0-9]{1,}$",
+    "description": "while loop start",
+   "actionType": 10
+  },
+  {
+    "id": "^wh[0-9]{1,}_while.end",
+    "description": "while loop end",
+    "actionType": 11
+  }
+]

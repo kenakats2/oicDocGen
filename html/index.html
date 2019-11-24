@@ -1,0 +1,44 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Integration Application Document Generator Tool (Sample)</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/a11y-dark.min.css">
+    <script type="text/javascript" src="../js/index.js"></script>
+    <script type="text/javascript" src="../js/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+</head>
+<body>
+  <h1>Document Generator Tool (Sample)</h1>
+  <form name="test">
+    <input type="button" value="Select iar file" class="bttn-simple bttn-md bttn-primary" onClick="fileUpload()">
+  </form>
+  <form name="test2">
+    <input type="button" value="Extract configuration" class="bttn-simple bttn-md bttn-primary" onClick="extractConfig()">
+  </form>
+  <form name="test3">
+    <input type="button" value="View flowchart" class="bttn-simple bttn-md bttn-primary" onClick="openChildWindow()">
+  </form>
+  <p id="info"></p>
+    <button id="button" class="cp_btn" onClick="window.alert('This feature is not implemented yet !')">Export data to Excel</button>
+    <button id="button" class="cp_btn" onClick="copyFunction()">Copy to clipbord</button>
+  <pre>
+    <code class="javascript" id="info2">
+//OIC Integration flow will output as a JSON file here
+
+//Sample JSON file
+{
+  "flow": [  //Information of each action is displayed in order of processing
+    {
+      "id": "lg1",  //Unique id of each action
+      "next": "lg2",  //Unique id of next action
+      "name": "Logger01",  //Display name of each action
+      "description": "Output a custom log",  //Description of each action
+      "detail": "concat($flowId, current-dateTime( ))"  // Detail of each action
+    }
+  ]
+}
+    </code>
+  </pre>
+</body>
+</html>
